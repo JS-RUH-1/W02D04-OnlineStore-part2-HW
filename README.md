@@ -13,6 +13,11 @@ Your online store is required to implement the following:
     * Create forms for different delivery options.
     * Your total should change based on what delivery option is chosen and if a certain coupon is applied.
     * Create a “conﬁrm order” button which alerts the user that their order was successful and generates them a reference number (keyword: generate)
+ * Your website should contain:
+   * A function which contains hiding/showing.
+   * A drop-down menu.
+   * Animation effects.
+   * A function with chained effects. 
 
 ![gif](https://c.tenor.com/Q0Fda6ZNcj4AAAAC/minions-scream.gif)
 
