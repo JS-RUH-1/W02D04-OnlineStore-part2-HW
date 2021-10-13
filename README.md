@@ -1,4 +1,4 @@
-# Online Store
+# Online Store Part2
 you created Online store with HTML and CSS now you will complete your work by adding some javaScript to it to make it more interactive.
 
 Your online store is required to implement the following:
