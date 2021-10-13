@@ -17,7 +17,6 @@ Your online store is required to implement the following:
    * A function which contains hiding/showing.
    * A drop-down menu.
    * Animation effects.
-   * A function with chained effects. 
 
 ![gif](https://c.tenor.com/Q0Fda6ZNcj4AAAAC/minions-scream.gif)
 
