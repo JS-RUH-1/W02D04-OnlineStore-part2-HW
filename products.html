@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+
+    <title>Smart Device</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-sixteen.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+
+  </head>
+
+  <body>
+
+    <!-- ***** Preloader Start ***** -->
+    <!-- <div id="preloader">
+        <div class="jumper">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>   -->
+    <!-- ***** Preloader End ***** -->
+
+    <!-- Header -->
+    <header class="">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="index.html"><h2><h2>Smart Device <em>E-commerce</em></h2></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home
+                  <span class="sr-only">(current)</span>
+                </a>
+              </li> 
+              <li class="nav-item active">
+                <a class="nav-link" href="products.html">Our Products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="cart.html"><i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i>
+                
+                  <span id="cart-products" style="padding-left: 5px;font-size: 20px; ">  </span> 
+                  <script> 
+                  
+                          document.getElementById("cart-products").innerHTML=localStorage.getItem("cartCount")
+                          console.log(localStorage.getItem("cartCount"));
+    
+                  
+                  </script>
+                
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Page Content -->
+    <div class="page-heading products-heading header-text">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="text-content">
+              <h2>Apple products</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="products">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="filters">
+              <ul>
+                  <li class="active" data-filter="*">All Products</li>
+                  <li data-filter=".des">iPhones</li>
+                  <li data-filter=".dev">Accessories</li>
+                
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="filters-content">
+                <div class="row grid">
+                    <div class="col-lg-4 col-md-4 all des">
+                      <div class="product-item zoom">
+                        <img src="assets/images/iphone.jpg" alt="">
+                        <div class="down-content">
+                          <h4>iPhone 13</h4>
+                          <h6>SAR 4,999,00</h6>
+                          <p> New Apple iPhone 13 Pro Cover - Blue.</p>
+                        
+                          <ul class="stars">
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                          </ul>
+                          <span>Reviews (30)</span>
+                          <br>
+                          <button class="btn btn-primary" style="height: 48px;"  data-toggle="modal" data-target="#exampleModalCenter3">
+                            More Info
+                          </button>
+                          <button  onclick= "setitem1('iPhone 12 Pro - Blue')"
+                           class="btn btn-primary" style=" background-color: rgb(109, 223, 109); border-color: green; margin-left: 10px;"  >
+                          <i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 all des">
+                      <div class="product-item zoom">
+                        <img src="assets/images/iphone10.jpg" alt="">
+                        <div class="down-content">
+                          <h4>iPhone 12</h4>
+                          <h6>SAR 3,955,00</h6>
+                          <p> Apple iPhone 12 Pro  - Pink.</p>
+                          <ul class="stars">
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                          </ul>
+                          <span>Reviews (67)</span>
+                          <br>
+                          <button type="button" style="height: 48px;" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter4">
+                            More Info
+                          </button>
+                          <button type="button" onclick= "setitem2('iPhone 12 Pro - pink')" class="btn btn-primary" style="background-color: rgb(109, 223, 109); border-color: green; margin-left: 10px;"  >
+                            <i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                      </div>
+                    </div>
+                 
+                    <div class="col-lg-4 col-md-4 all des">
+                      <div class="product-item zoom">
+                        <img src="assets/images/iphonegold.jpg" alt="">
+                        <div class="down-content">
+                         <h4>iPhone 13</h4>
+                          <h6>SAR 4,555,00</h6>
+                          <p> New Apple iPhone 13 Pro - Gold.</p>
+                          <ul class="stars">
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                          </ul>
+                          <span>Reviews (72)</span>
+                          <br>
+                          <button type="button" style="height: 48px;"  class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter5">
+                            More Info
+                          </button>
+                          <button type="button" onclick= "setitem3('iPhone 13 - Gold')" class="btn btn-primary" style="background-color: rgb(109, 223, 109); border-color: green; margin-left: 10px;"  >
+                            <i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 all dev">
+                      <div class="product-item zoom">
+                      <img src="assets/images/macsafe1.jpg" alt="">
+                        <div class="down-content">
+                          <h4>iPhone 13 Cover </h4>
+                          <h6>SAR 455,00</h6>
+                          <p>New Apple iPhone 13 Pro - PinK..</p>
+                          <ul class="stars">
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                          </ul>
+                          <span>Reviews (14)</span>
+                          <br>
+                          <button type="button"style="height: 48px;" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+                            More Info
+                          </button>
+                          <button type="button" onclick= "setitem4('iPhone 12 Cover - Pink')"  class="btn btn-primary" style="background-color: rgb(109, 223, 109); border-color: green; margin-left: 10px;"  >
+                            <i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                      </div>
+                    </div>
+                  
+                  
+                    <div class="col-lg-4 col-md-4 all dev">
+                      <div class="product-item zoom">
+                        <img src="assets/images/macsafe1.jpg" alt="">
+                        <div class="down-content">
+                          <h4>iPhone 12 Cover</h4>
+                          <h6>SAR 255,00</h6>
+                          <p>New Apple iPhone 13 Pro - Gold..</p>
+                          <ul class="stars">
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                          </ul>
+                          <span>Reviews (60)</span>
+                          <br>
+                          <button type="button" style="height: 48px;"class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter1">
+                            More Info
+                          </button>
+                          <button type="button" onclick= "setitem5('iPhone 12 Cover - Gold')" class="btn btn-primary" style="background-color: rgb(109, 223, 109); border-color: green; margin-left: 10px;"  >
+                            <i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 all dev">
+                      <div class="product-item zoom">
+                        <img  src="assets/images/macsafe1.jpg" alt="">
+                        <div class="down-content">
+                         <h4>iPhone 13 Cover</h4>
+                          <h6>SAR 599,00</h6>
+                          <p>New Apple iPhone 13 Pro - Blue.</p>
+                          <ul class="stars">
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                          </ul>
+                          <span>Reviews (90)</span>
+                          <br>
+                          <button type="button"style="height: 48px;" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter2">
+                            More Info
+                          </button>
+                          <button type="button"  onclick= "setitem6('iPhone 13 Cover - Blue')" class="btn btn-primary" style="background-color: rgb(109, 223, 109); border-color: green; margin-left: 10px;"  >
+                            <i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                      </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <ul class="pages">
+              <li class="active"><a href="#">1</a></li>
+              <li ><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
+              <li><a href="#"><i class="fa fa-angle-double-right"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalCenterTitle">iPhone 13 Cover </h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-4 col-md-4">
+              <img  src="assets/images/macsafe1.jpg" alt="" height="300px" width="250px">
+
+
+            </div>
+            <div class="col-md-4 ml-auto" style="margin-right: 30px; margin-top: 40px;"> 
+              <h4>Description:</h4><br>
+                <p>This cover protect the iphone from anything. not only that it have a bettery  </p><br>
+
+                <h4>All Colors:</h4><br>
+                <p>Blue , Pink , White </p><br>
+                <h4>Price:</h4><br>
+                <p>SAR 455.0 </p>
+              
+            </div>
+          </div>
+       
+          <div class="row">
+            <div class="col-sm-9">
+              <button onclick= "setitem4('iPhone 12 Cover - Pink')"  type="button"  style=" margin-bottom: 20px;" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalScrollable">
+                Add to cart
+              </button>
+           
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    
+    </div>
+  </div>
+
+
+  <!-- modal 2 -->
+  <div class="modal fade" id="exampleModalCenter1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalCenterTitle">iPhone 13 Cover </h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-lg-4 col-md-4">
+                <img  src="assets/images/macsafe1.jpg" alt="" height="300px" width="250px">
+  
+  
+              </div>
+              <div class="col-md-4 ml-auto" style="margin-right: 30px; margin-top: 40px;"> 
+                <h4>Description:</h4><br>
+                  <p>This cover protect the iphone from anything. not only that it have a bettery  </p><br>
+  
+                  <h4>All Colors:</h4><br>
+                  <p>Blue , Pink , White </p><br>
+                  <h4>Price:</h4><br>
+                  <p>SAR 255.0 </p>
+                
+              </div>
+            </div>
+         
+            <div class="row">
+              <div class="col-sm-9">
+                <button type="button" onclick= "setitem5('iPhone 12 Cover - Gold')" style=" margin-bottom: 20px;" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalScrollable">
+                  Add to cart
+                </button>
+             
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      
+      </div>
+    </div>
+
+    <!-- modal 3 -->
+    <div class="modal fade" id="exampleModalCenter2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalCenterTitle">iPhone 13 Cover </h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-lg-4 col-md-4">
+                  <img  src="assets/images/macsafe1.jpg" alt="" height="300px" width="250px">
+    
+    
+                </div>
+                <div class="col-md-4 ml-auto" style="margin-right: 30px; margin-top: 40px;"> 
+                  <h4>Description:</h4><br>
+                    <p>This cover protect the iphone from anything. not only that it have a bettery  </p><br>
+    
+                    <h4>All Colors:</h4><br>
+                    <p>Blue , Pink , White </p><br>
+                    <h4>Price:</h4><br>
+                    <p>SAR 599.0 </p>
+                  
+                </div>
+              </div>
+           
+              <div class="row">
+                <div class="col-sm-9">
+                  <button type="button"  onclick= "setitem6('iPhone 13 Cover - Blue')" style=" margin-bottom: 20px;" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalScrollable">
+                    Add to cart
+                  </button>
+               
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+        
+        </div>
+      </div>
+
+
+
+
+
+  
+
+
+      <!-- iphone Modal -->
+<div class="modal fade" id="exampleModalCenter3" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalCenterTitle">iPhone 13 Pro </h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-4 col-md-4">
+              <img  src="assets/images/iphone.jpg" alt="" height="300px" width="250px">
+
+
+            </div>
+            <div class="col-md-4 ml-auto" style="margin-right: 30px; margin-top: 40px;"> 
+              <h4>Description:</h4><br>
+                <p>New Apple iPhone 13 Pro 256 GB   </p><br>
+
+                <h4>All Colors:</h4><br>
+                <p>Blue , Pink , White </p><br>
+                <h4>Price:</h4><br>
+                <p>SAR 4,999.0 </p>
+              
+            </div>
+          </div>
+       
+          <div class="row">
+            <div class="col-sm-9">
+              <button type="button" onclick= "setitem1('iPhone 12 Pro - Blue')"  style=" margin-bottom: 20px;" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalScrollable">
+                Add to cart
+              </button>
+           
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      
+    </div>
+  </div>
+     <!-- iphone Modal 2 -->
+<div class="modal fade" id="exampleModalCenter4" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalCenterTitle">iPhone 13 Pro </h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-4 col-md-4">
+              <img  src="assets/images/iphone10.jpg" alt="" height="300px" width="250px">
+
+
+            </div>
+            <div class="col-md-4 ml-auto" style="margin-right: 30px; margin-top: 40px;"> 
+              <h4>Description:</h4><br>
+                <p> Apple iPhone 12 Pro 256 GB   </p><br>
+
+                <h4>All Colors:</h4><br>
+                <p>Blue , Pink , White </p><br>
+                <h4>Price:</h4><br>
+                <p>SAR 3,955.0 </p>
+              
+            </div>
+          </div>
+       
+          <div class="row">
+            <div class="col-sm-9">
+              <button type="button"  onclick= "setitem2('iPhone 12 Pro - pink')" style=" margin-bottom: 20px;" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalScrollable">
+                Add to cart
+              </button>
+           
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      
+    </div>
+  </div>
+     <!-- iphone Modal 3 -->
+<div class="modal fade" id="exampleModalCenter5" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalCenterTitle">iPhone 13 Pro </h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-4 col-md-4">
+              <img  src="assets/images/iphonegold.jpg" alt="" height="300px" width="250px">
+
+
+            </div>
+            <div class="col-md-4 ml-auto" style="margin-right: 30px; margin-top: 40px;"> 
+              <h4>Description:</h4><br>
+                <p>New Apple iPhone 13 Pro 256 GB   </p><br>
+
+                <h4>All Colors:</h4><br>
+                <p>Blue , Pink , White </p><br>
+                <h4>Price:</h4><br>
+                <p>SAR 4,955.0 </p>
+              
+            </div>
+          </div>
+       
+          <div class="row">
+            <div class="col-sm-9">
+              <button type="button" onclick= "setitem3('iPhone 13 - Gold')" style=" margin-bottom: 20px;" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalScrollable">
+                Add to cart
+              </button>
+           
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      
+    </div>
+  </div>
+  
+
+
+    
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="inner-content">
+             
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+    <!-- Bootstrap core JavaScript -->
+ 
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Additional Scripts -->
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/owl.js"></script>
+    <script src="assets/js/slick.js"></script>
+    <script src="assets/js/isotope.js"></script>
+    <script src="assets/js/accordions.js"></script>
+
+    
+   
+    <script src="assets/js/product.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+
+
+
+  </body>
+
+</html>
