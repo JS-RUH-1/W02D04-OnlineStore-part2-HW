@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/png" href="/favicon16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="/favicon32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/favicon96x96.png" sizes="96x96">
+    <link rel="stylesheet" href="style/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PC Gadget</title>
+</head>
+
+<body onload="doShowAll()">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+        <a class="navbar-brand" href="index.html"> PC Gadget</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="pages/allitems.html">All Products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pages/aboutus.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pages/auth.html">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="cart" href="pages/cart.html">Cart (0)</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/19-118-233-V01.jpg" class="d-block" style="width: 100%; height: 500px;" alt="header2">
+
+            </div>
+            <div class="carousel-item">
+                <img src="images/20-236-607-01.jpg" class="d-block "style="width: 100%; height: 500px; alt="header2">
+            </div>
+            <div class="carousel-item">
+                <img src="images/14-127-908-02.jpg" class="d-block "style="width: 100%; height: 500px; alt="header3">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <div class="mx-auto" style="width: 200px;">
+        <br>
+    </div>
+
+    </nav>
+
+    <div class="alert alert-success" role="alert">
+        <center>
+            <a href="index.html#bestselling" style="text-decoration:none; color: black;">
+
+
+                <h4>Best Selling Items</h4s>
+            </a>
+        </center>
+
+    </div>
+
+    <div class="bestselling" id="bestselling">
+        <div class="card" style="width: 18rem;">
+            <img id="filter" src="images/13-145-263-V012.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Mother Board</h5>
+                <p class="card-text">A motherboard (also called mainboard, main circuit board, or mobo) is the main
+                    printed circuit board (PCB) in general-purpose computers.</p>
+                <a href="pages/allitems.html" class="btn btn-primary">Go See All</a>
+            </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img id="filter" src="images/17-139-083-01.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Power Supply </h5>
+                    <p class="card-text">A power supply unit (PSU) converts mains AC to low-voltage regulated DC power
+                        for the internal components of a computer. </p>
+                    <a href="pages/allitems.html" class="btn btn-primary">Go See All</a>
+                </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img id="filter" src="images/35-856-078-V01.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">CPU Water Cooler </h5>
+                        <p class="card-text">Computer cooling is required to remove the waste heat produced by computer
+                            components, to keep components within permissible operating temperature limits.</p>
+                        <a href="pages/allitems.html" class="btn btn-primary">Go See All</a>
+                 </div>
+                 </div>
+
+
+                </div>
+                <br>
+                <script src="js/scripts.js"></script>
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"
+                    integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ"
+                    crossorigin="anonymous"></script>
+</body>
+
+</html>
