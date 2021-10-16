@@ -1,0 +1,237 @@
+/* for background animation  */
+@keyframes example {
+    from {background-color:cadetblue;}
+    to {background-color:grey}
+  }
+
+body{
+    background-color: grey;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* border for tables +  customised formatting (colours, layout)  */
+table, th, td {
+    border: 1px solid black;
+    table-layout: auto;
+    border-collapse: collapse;
+    padding: 5px;
+  }
+
+/* image padding and border    */
+img{
+    border: 5px;
+    padding: 5px;
+}
+
+/* button padding  */
+.btn{
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*  font styles with different colouring effects  */
+.card1 .card-text {
+    font-family: Arial, Helvetica, sans-serif;
+    color: crimson;
+    font-style: italic;
+}
+.card-img-top{
+    height: 286;
+    width: 286;
+}
+
+/* color filter 2 images & font styles with different colouring effects */
+.card2 .card-img-top{
+  filter: saturate(5.2) invert(9%) sepia(12%) ;
+  font-style:inherit;
+  color: black;
+}
+/* color filter 2 images */
+.card6 .card-img-top{ 
+    filter: saturate(2.2) invert(5%) sepia(14%) ;
+    font-family: sans-serif;
+    font-style: oblique;
+    
+  }
+/*  font styles with different colouring effects  */
+.card6 .card-text{ 
+  filter: saturate(2.2) invert(5%) sepia(14%) ;
+  font-family: sans-serif;
+  font-style: oblique;
+ 
+  
+}  
+
+  /* for testimonials */
+.container .review{
+  border: 2px solid #ccc;
+  background-color: #eee;
+  border-radius: 5px;
+  padding: 16px;
+  margin: 16px 0;
+}
+
+.products-container{
+    height: 100vh;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top: 50px;
+
+}
+.product-header{
+    width: 100%;
+    max-width: 650px;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 4px solid lightgray;
+    margin: 0 auto;
+}
+
+.product-title{
+    width: 45%;
+
+}
+
+.price{
+    width: 15%;
+    border-bottom: 1px solid lightgray;
+    display: flex;
+    align-items: center;
+
+}
+.quantity{
+    width: 30%;
+    border-bottom: 1px solid lightgray;
+    display: flex;
+    align-items: center;
+
+}
+.total{
+    /* width: 10%; */
+    border-bottom: 1px solid lightgray;
+    /* display: flex; */
+    /* align-items: center; */
+
+}
+.cart-content{
+
+}
+.cart-img{
+    width: 100px;
+    height: 100px;
+}
+
+
+.cart ion-icon{
+    vertical-align: bottom;
+    font-size: 20px;
+  }
+  
+  .cart {
+    background-color: royalblue;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+
+.card-body .remove{
+    color: red;
+}
+
+.cart-body .increase {
+    font-size: 25px;
+    color: royalblue;
+  }
+
+.cart-body .decrease {
+font-size: 25px;
+color: royalblue;
+}
+
+.cart-body .card-text{
+    font-size: 20px;
+    padding-left: 6px;
+  }  
+
+
+.basketTotalContainer{
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Clear floats after containers */
+.container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Float images inside the container to the left. Add a right margin, and style the image as a circle */
+.container .review img {
+  float: left;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+/* Increase the font-size of a span element */
+.container span {
+  font-size: 20px;
+  margin-right: 15px;
+}
+
+/* Add media queries for responsiveness. This will center both the text and the image inside the container */
+@media (max-width: 500px) {
+  .container {
+    text-align: center;
+  }
+
+  .container img {
+    margin: auto;
+    float: none;
+    display: block;
+  }
+}
+
+.hover01 figure img {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.hover01 figure:hover img {
+	-webkit-transform: scale(1.3);
+	transform: scale(1.3);
+}
+
+
+/* Zoom Out #1 */
+/* .hover03 figure img {
+	-webkit-transform: scale(1.5);
+	transform: scale(1.5);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.hover03 figure:hover img {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+} */
