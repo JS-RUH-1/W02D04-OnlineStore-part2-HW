@@ -1,0 +1,28 @@
+[
+    {
+        "imageSrc" : "/imeges/iphone 13 pro.jpeg",
+        "name" : "Iphone 13 pro",
+        "price": "3250"
+
+    },
+    {
+        "imageSrc" : "/imeges/5129auZX34L._AC_SX679_.jpg",
+        "name" : "Macbook",
+        "price": "4230"
+    },
+    {
+        "imageSrc" : "/imeges/iphone 13 pro.jpeg",
+        "name" : "The Prince",
+        "price": "50"
+    },
+    {
+        "imageSrc" : "/imeges/iphone 13 pro.jpeg",
+        "name" : "Pixel-6-Pro",
+        "price": "29000"
+    },
+    {
+        "imageSrc" : "/imeges/iphone 13 pro.jpeg",
+        "name" : "Bobby Original Anti-Diefstal Rugzak, Grijs",
+        "price": "950"
+    }
+]

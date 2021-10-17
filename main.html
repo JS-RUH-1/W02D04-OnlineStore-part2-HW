@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+    <title>Document</title>
+</head>
+<body>
+  
+  <div class="alert alert-warning alert-dismissible fade show" role="alert">
+    <strong id="alert">Holy guacamole!</strong> Is your total amount
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+    <div class="navbar">
+    <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Yazeed Store</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="main.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="meet-to-us.html">Meet the team</a>
+                  </li>
+                  
+                    
+                  <li class="nav-item">
+                    <a class="nav-link" href="about-us.html">About us</a>
+                  </li>
+                  
+                  <li class="nav-item" onclick="showCart(e)">
+                   
+                    <a id="my-cart"  href="cart.html"> <button onclick="totalAmount()" type="button" class="btn btn-danger"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                      <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                    </svg>   </button></a>
+                    
+                  </li>
+
+                  <button type="button" class="btn btn-secondary " id="soon" data-toggle="tooltip" data-placement="top" title="Comming Soon ...">
+                    Movies
+                  </button>
+                
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+      </nav>
+    </div>
+    <h4>Coming Soon ..</h4>
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+      <div class="carousel-item active">
+          <img src="imeges/header1.jpg" class="d-block w-100 " alt="...">
+      </div>
+      <div class="carousel-item">
+          <img src="imeges/header2.jpg" class="d-block w-100 " alt="...">
+      </div>
+      <div class="carousel-item">
+          <img src="imeges/header3.jpeg" class="d-block w-100 " alt="...">
+      </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+      </button>
+  </div>
+
+  
+  <br>
+  
+    <!-- <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+      <div class="carousel-item active">
+          <img src="imeges/157961-phones-review-hands-on-samsung-galaxy-z-fold-3-review-image1-coz70vermc.jpeg" class="d-block w-100 " alt="...">
+      </div>
+      <div class="carousel-item">
+          <img src="imeges/Samsung-Galaxy-S21-Ultra-5G-256GBPhantom-Black.jpeg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+          <img src="/imeges/latin-en-ur55-lu28r550uqlxzx-frontblack-305260960.webp" class="d-block w-100" alt="...">
+      </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+      </button>
+  </div> -->
+    
+    
+        
+      
+    <div class="main" data-aos="flip-left" dtata-aos-delay="200">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+            
+              <div class="card ">
+                
+                <div class="image">
+                  <img class="image__img" src="imeges/iphone 13 pro.jpeg" id="img-main" class="card-img-top " alt="..." >
+
+                  <div class="image__overlay">
+                    <div class="image__title">Iphone</div>
+                    <p class="image__dis">Here We Have Iphone</p>
+                      
+                    
+                  </div>
+                  
+                  
+                </div>
+                
+                
+                
+
+                <div class="card-body">
+                <h5 class="card-title">Iphone 13 pro</h5>
+                <!-- <p class="card-text">In Gotham City, mentally troubled comedian Arthur Fleck is disregarded and mistreated by society. He then embarks on a downward spiral of revolution and bloody crime. This path brings him face-to-face with his alter-ego: the Joker.</p> -->
+                
+                  <input class="btn btn-primary m-2 " type="button" onclick="location.href='iphone.html'" value="more detils ">
+                 
+                  <!-- <p><a href="iphone.html" class="pe-auto">
+                  <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
+                      
+                      more detils 
+                    </button> -->
+
+                  
+                 
+                    <div class="btnn">
+                            
+                            <p class="add-card" >
+                              <button onclick="addToCart(0)"  type="button" class="btn btn-info"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                              </svg></button>
+                            </p>
+
+                        </div>
+                        
+                </div>
+                <div >
+                  <h3 style="font-family: Arial, Helvetica, sans-serif;  color: blue"><b>This price before TAX</b></h3>
+                  <h1 id="price1"  >3250<sub>SR</sub></h1>
+                  
+                </div>
+                
+            </div>
+            </div>
+            <div class="col">
+            <div class="card">
+              <div class="image">
+                <img class="image__img" src="imeges/5129auZX34L._AC_SX679_.jpg" id="img-main" class="card-img-top " alt="..." >
+
+                <div class="image__overlay">
+                  <div class="image__title">Macbook</div>
+                  <p class="image__dis">Here We Have Macbook</p>
+                    
+                  
+                </div>
+                
+                
+              </div>
+                
+              <!-- <img src="imeges/5129auZX34L._AC_SX679_.jpg" id="img-main" class="card-img-top" alt="..."> -->
+                <div class="card-body">
+                <h5 class="card-title">Macbook</h5>
+                <!-- <p class="card-text">After the devastating events of Avengers: Infinity War (2018), the universe is in ruins. With the help of remaining allies, the Avengers assemble once more in order to reverse Thanos' actions and restore balance to the universe.</p> -->
+                <!-- <p><a href="macbook.html" class="pe-auto">
+                    <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
+                        
+                        more detils 
+                      </button>
+                    </a></p> -->
+                    <input type="button" onclick="location.href='macbook.html'" class="btn btn-primary mb-2" value="more detils" >
+
+                    <p class="add-card" >
+                      <button type="button" data-name="product1"  onclick="addToCart(1)" class="btn btn-info addToCart"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                      </svg></button>
+                    </p>
+               
+                  </div>
+                  <div>
+                    <h3 style="font-family: Arial, Helvetica, sans-serif;  color: blue"><b>This price before TAX</b></h3>
+                    <h1 id="price2">4230<sub>SR</sub></h1>
+                    
+                  </div>
+
+                
+            </div>
+            </div>
+            
+            <div class="col">
+            <div class="card ">
+              <div class="image">
+                <img class="image__img" src="imeges/The Prince.jpg" id="img-main" class="card-img-top " alt="..." >
+
+                <div class="image__overlay">
+                  <div class="image__title">The Prince</div>
+                  <p class="image__dis">Here We Have The Prince</p>
+                    
+                  
+                </div>
+                
+                
+              </div>
+               
+              <!-- <img src="imeges/The Prince.jpg" id="img-main" class="card-img-top" alt="..."> -->
+                <div class="card-body">
+                <h5 class="card-title">The Prince</h5>
+                <!-- <p class="card-text">Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.</p> -->
+               
+                    <input type="button" onclick="location.href='book.html'" class="btn btn-primary mb-2" value="more detils" >
+                    <div class="btnn">
+                       <!-- <p><a href="book.html" class="pe-auto">
+                    <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
+                    more detils 
+                      </button>
+                    </a></p> -->
+                    
+                    </div>
+                    <p class="add-card" >
+                      <button onclick="addToCart(2)" type="button" class="btn btn-info"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                      </svg></button>
+                    </p>
+                </div>
+                <div>
+                  <h3 style="font-family: Arial, Helvetica, sans-serif;  color: blue"><b>This price before TAX</b></h3>
+                  <h1 id="price3">50<sub>SR</sub></h1>
+                  
+                </div>
+                
+            </div>
+            
+            </div>
+            <div class="col">
+                <div class="card ">
+                  
+                  
+                  <div class="image">
+                    <img class="image__img" src="imeges/Pixel-6-Pro.jpeg" id="img-main" class="card-img-top " alt="..." >
+  
+                    <div class="image__overlay">
+                      <div class="image__title">Pixel-6-Pro</div>
+                      <p class="image__dis">Here We Have Pixel-6-Pro</p>
+                        
+                      
+                    </div>
+                    
+                    
+                  </div>
+                  
+                    <!-- <img src="imeges/Pixel-6-Pro.jpeg" id="img-main" class="card-img-top "  alt="..." "> -->
+                    <div class="card-body">
+                    <h5 class="card-title">Pixel-6-Pro</h5>
+                    <!-- <p class="card-text">Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.</p> -->
+                   
+                    <input type="button" onclick="location.href='pixel.html'" class="btn btn-primary mb-2" value="more detils" >
+                   
+                    <!-- <p><a href="pixel.html" class="pe-auto">
+                        <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
+                            
+                            more detils 
+                          </button>
+                        </a></p> -->
+                        <p class="add-card" >
+                          <button onclick="addToCart(3)" type="button" class="btn btn-info"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                          </svg></button>
+                        </p>
+                      </div>
+                      <div>
+                        <h3 style="font-family: Arial, Helvetica, sans-serif;  color: blue"><b>This price before TAX</b></h3>
+                        <h1 id="price4">2900<sub>SR</sub></h1>
+                        
+                      </div>
+                    
+                </div>
+                
+                </div>
+                <div class="col">
+                    <div class="card ">
+                       
+                      <div class="image">
+                        <img class="image__img" src="imeges/Bobby Original Anti-Diefstal Rugzak, Grijs.jpeg" id="img-main" class="card-img-top " alt="..." >
+      
+                        <div class="image__overlay">
+                          <div class="image__title">Bobby Original</div>
+                          <p class="image__dis">Here We Have Bobby Original </p>
+                            
+                          
+                        </div>
+                        
+                        
+                      </div>
+                      
+                      <!-- <img src="imeges/Bobby Original Anti-Diefstal Rugzak, Grijs.jpeg" id="img-main" class="card-img-top img-fluid animated fadeInLef"  alt="..."> -->
+                        <div class="card-body">
+                        <h5 class="card-title">Bobby Original Anti-Diefstal Rugzak, Grijs</h5>
+                        <!-- <p class="card-text">Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.</p> -->
+                       
+                        <input type="button" onclick="location.href='backpac.html'" class="btn btn-primary mb-2" value="more detils" >
+                       
+                        <!-- <p><a href="backpac.html" class="pe-auto">
+                            <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
+                                
+                                more detils 
+                              </button>
+                            </a></p> -->
+                            <p class="add-card" >
+                              <button onclick="addToCart(4)"type="button" class="btn btn-info"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                              </svg></button>
+                            </p>
+                          </div>
+                          <div>
+                            <h3 style="font-family: Arial, Helvetica, sans-serif;  color: blue"><b>This price before TAX</b></h3>
+                            <h1 id="price5">950<sub>SR</sub></h1>
+                            
+                          </div>
+                          
+                    </div>
+                    
+                    </div>
+                    
+        </div>
+        
+        <p>
+          <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+            Get Your Copon
+          </a>
+         
+        </p>
+        <div class="collapse" id="collapseExample">
+          <div class="card card-body">
+           Chose one of these<b> y9b , abc , hwd or T1000</b>
+          </div>
+        </div>
+    
+        
+    </div>
+    <script src="script.js"></script>
+
+</body>
+</html>
