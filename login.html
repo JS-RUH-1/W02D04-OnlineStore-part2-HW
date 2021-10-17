@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./css/bootstrap.css">
+        <meta name="viewport" content="width=width-device, initial-scale=1.0">
+        <style>
+            body{
+                animation-name: back-anmi;
+                animation-duration: 10s;
+                animation-delay: 3s;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+            }
+            @keyframes back-anmi{
+                from {left: 0px;}
+                to {left: 100%;}
+                0% {background-color: #f9f5f1;}
+                10% {background-color: #f9f5f1;}
+                20% {background-color: #f9f5f1;}
+                30% {background-color: #f9f5f1;}
+                40% {background-color: ##f9f2ec;}
+                50% {background-color: ##f9f2ec;}
+                60% {background-color: #f9f2ec;}
+                70% {background-color: #f9f2ec;}
+                80% {background-color: #f9f5f1;}
+                90% {background-color: #f9f5f1;}
+                100% {background-color: #f9f5f1;}
+            }
+            .hp-img{
+                width:130px; 
+                height:160px;
+                object-fit: contain;
+            }
+            #head-img{
+                background-image: url("images/nathan-dumlao-Y3AqmbmtLQI-unsplash.jpg");
+                background-size:cover;   
+                background-position:center;
+            }
+            a{
+                color: black;
+                text-decoration: none;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <div id="main">
+            
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="index.html"><h4>2Day Coffee</h4></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation"></button>
+                  <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="products.html">Products</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="help.html">Help center</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Login</a>
+                      </li>
+                    </ul>
+                        <form class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+            
+            <div class="" id="head-img" style="height:280px ">
+
+            </div>
+            <div class="container px-5 py-4 mt-4">
+                <h3 class="container text-center">
+                    Log-in
+                </h3> 
+                <div class="container mt-5"  style="width: 500px;">
+                    <div class="mb-3 row">
+                        <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+                        <div class="col-sm-10">
+                          <input type="text" class="form-control" id="staticEmail" placeholder="Your email">
+                        </div>
+                      </div>
+                      <div class="mb-4 row">
+                        <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+                        <div class="col-sm-10">
+                          <input type="password" class="form-control" id="inputPassword" placeholder="Your password">
+                        </div>
+                      </div>
+                      <div class="text-end">
+                        <button type="submit" class="btn btn-success">login</button>
+                      </div>
+                </div>
+                
+            </div>
+
+    </body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./css/bootstrap.css">
+        <meta name="viewport" content="width=width-device, initial-scale=1.0">
+        <style>
+            .p-img{
+                width:120px;height: 100px;
+                object-fit: contain;
+            }
+        </style>
+        <script src="./main.js"></script>
+    </head>
+
+    <body onload="load_cart()">
+
+        <div id="main">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="./index.html"><h4>2Day Coffee</h4></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation"></button>
+                  <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="products.html">Products</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="help.html">Help center</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="cart.html">
+                            Cart <sup class="badge rounded-pill bg-success">0</sup> 
+                        </a>
+                      </li>
+                    </ul>
+                        <form class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+            
+            <div class="container mt-4">
+                <h4 id="coffee-makers">Shopping cart</h4>
+                <div id="cart" class="container border border-dark rounded-2 mt-5" style="min-height: 130px;">
+
+                    <!-- Cart items will be added here -->
+
+                </div>
+                
+                <div class="container border border-dark mt-3 py-2 rounded-2">
+                    <h6>Choose method of delivery:</h6>
+                    <form>
+                        <input type="radio" id="shipp" name="delivery" value="shiping" oninput="delivery_opt(this)">
+                        <label class="form-label" for="ship">Shiping - SAR 35</label><br>
+                        <input type="radio" id="colct" name="delivery" value="collection" oninput="delivery_opt(this)" checked>
+                        <label class="form-label" for="colct">Collect - Free</label><br>
+                        <label class="form-label" for="addr">Address:</label>
+                        <input type="text" class="form-control" id="addr" name="addr" placeholder="Country, city, street">
+                    </form>
+                </div>
+
+                <div class="container border border-dark mt-3 pt-2 rounded-2">
+                    <div id="cart-total" class="row justify-content-end">
+
+                        <!-- Total will be here -->
+                        
+                    </div>
+                    <div class="row justify-content-center mb-3">
+                            <form class="row text-center justify-content-center">
+                                <div class="col-md-2 pt-2">
+                                    <label for="coupon">Disount coupon:</label>
+                                </div>
+                                <div class="col-md-2">
+                                    <input class="form-control" id="coupon" name="coupon">
+                                </div>
+                                <div class="col-md-2">
+                                    <button type="button" class="btn btn-warning" onclick="add_coupon()">Add</button>
+                                </div>
+                            </form>
+                    </div>
+                </div>
+
+                <div class="container border border-dark mt-3 py-2 rounded-2">
+                    <h6>Payment method:</h6>
+                    <div class="row">
+                        <div class="col">
+                            <input type="radio" id="master" name="payment" value="master">
+                        <label class="form-label" for="master"><img src="images/master_logo.png" style="width:100px;object-fit:contain;"></label>
+                        </div>
+                        <div class="col">
+                            <input type="radio" id="visa" name="payment" value="visa">
+                        <label class="form-label" for="visa"><img src="images/visa_logo.png" style="width:100px;object-fit:contain;"></label><br>
+                        </div>
+                        <div class="col">
+                            <input type="radio" id="mada" name="payment" value="mada">
+                        <label class="form-label" for="mada"><img src="images/mada_logo.png" style="width:100px;object-fit:contain;"></label><br>
+                        </div>
+                    </div>
+                        <div class="row">
+                            <div class="col">
+                                <label class="form-label" for="cardNo">Card number:</label>
+                                <input type="text" class="form-control" id="cardNo" name="cardNo">
+                            </div>
+                        </div>
+                </div>
+                <div class="container mt-3 mb-5 text-end">
+                    <button type="button" class="btn btn-success btn-lg" onclick="finish(this)">Process</button>
+                </div>
+            </div>
+            
+            <script src="./main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./css/bootstrap.css">
+        <meta name="viewport" content="width=width-device, initial-scale=1.0">
+        <style>
+            body{
+                animation-name: back-anmi;
+                animation-duration: 10s;
+                animation-delay: 3s;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+            }
+            @keyframes back-anmi{
+                from {left: 0px;}
+                to {left: 100%;}
+                0% {background-color: #f9f5f1;}
+                10% {background-color: #f9f5f1;}
+                20% {background-color: #f9f5f1;}
+                30% {background-color: #f9f5f1;}
+                40% {background-color: ##f9f2ec;}
+                50% {background-color: ##f9f2ec;}
+                60% {background-color: #f9f2ec;}
+                70% {background-color: #f9f2ec;}
+                80% {background-color: #f9f5f1;}
+                90% {background-color: #f9f5f1;}
+                100% {background-color: #f9f5f1;}
+            }
+            .hp-img{
+                width:130px; 
+                height:160px;
+                object-fit: contain;
+            }
+            #head-img{
+                background-image: url("images/nathan-dumlao-vbt-Fp3b5FA-unsplash.jpg");
+                background-size:cover;   
+                background-position:center;
+            }
+            a{
+                color: black;
+                text-decoration: none;
+            }
+        </style>
+        <script src="main.js"></script>
+    </head>
+
+    <body onload="on_load()">
+
+        <div id="main">
+            
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#"><h4>2Day Coffee</h4></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation"></button>
+                  <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="products.html">Products</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="help.html">Help center</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="cart.html">
+                            Cart <sup class="badge rounded-pill bg-success">0</sup> 
+                        </a>
+                      </li>
+                    </ul>
+                        <form class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+            
+            <div class="" id="head-img" style="height:280px ">
+
+            </div>
+            <div class="container px-5 py-4 mt-4">
+                <h4 class="container text-center">
+                    You are in the right place for coffee stuff!
+                </h4> 
+            </div>
+            
+            <div class="container my-5 text-center bg-light rounded">
+                <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 g-3 mx-auto" style="width: 800px;">
+                    <div class="col">
+                      <div class="card h-100 border-0">
+                        <a href="./products.html#coffe-makers"><img src="./images/coffee_maker1_1.jpg" class="card-img-top mx-auto hp-img" alt="Coffee makers"></a>
+                        <div class="card-body">
+                          <a href="./products.html#coffe-makers"><h6 class="card-title text-center">Coffee makers</h6></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 border-0">
+                            <a href="products.html#coffee-grinders"><img src="./images/coffee_grinder1_1.jpg" class="card-img-top mx-auto hp-img" alt="Coffee grinders"></a>
+                            <div class="card-body">
+                                <a href="products.html#coffee-grinders"><h6 class="card-title text-center" >Coffee grinders</h6></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 border-0">
+                            <a href="./products.html#coffee-mugs"><img src="./images/coffee_mug3.jpg" class="card-img-top mx-auto hp-img" alt="Coffee mugs"></a>
+                            <div class="card-body">
+                                <a href="./products.html#coffe-mugs"><h6 class="card-title text-center">Coffee mugs</h6></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 border-0">
+                            <a href="./products.html#coffee"><img src="images/coffee1_1.jpg" class="card-img-top mx-auto hp-img" alt="Coffee"></a>
+                            <div class="card-body">
+                                <a href="./products.html#coffee"><h6 class="card-title text-center">Coffee</h6></a>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+    </body>
+</html>
